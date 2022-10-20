@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 48px 0 48px;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  @include mobile-only {
+    flex-direction: column;
+  }
+  // position: fixed;
+  // margin: 20px 40px 0 40px;
+  // -webkit-box-shadow: 0px 14px 19px -2px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0px 14px 19px -2px rgba(0, 0, 0, 0.1);
+  > a {
+    text-decoration: none;
+    transition: transform 0.3s linear;
+    color: black;
+    &:hover {
+      color: black;
+      opacity: 0.8;
+      transform: scale(1.5);
+      transition: transform 0.3s linear;
+      //   animation: 800ms linear;
+    }
+  }
+  &__logoImage {
+    width: 100px;
+    &:hover {
+      opacity: 0.8;
+      animation: turn-bar 800ms linear;
+    }
+    @include mobile-only {
+      display: none;
+    }
+  }
+}
+
+.burger {
+  display: none !important;
+  opacity: 0;
+
+  @include mobile-only {
+    display: flex !important;
+    margin: auto !important;
+    margin-bottom: 28px !important;
+    opacity: 100;
+    transition: all 0.5s ease-in;
+    margin-top: 8px !important;
+    // margin-left: 41% !important;
+    > :first-child {
+      left: -20px;
+    }
+  }
+}
+
+.active {
+  padding: 8px;
+  border-bottom: 3px solid black;
+}
+
+@keyframes turn-bar {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    animation-timing-function: ease-in-out;
+  }
+}

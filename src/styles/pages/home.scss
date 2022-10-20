@@ -1,0 +1,55 @@
+.home {
+  background-color: $primary-color;
+  margin: 24px 80px;
+  box-shadow: 0px 0px 20px 5px rgba(199, 199, 199, 0.5);
+  text-align: left;
+  padding: 48px;
+  min-height: 70vh;
+  @include mobile-only {
+    margin: 8px 24px;
+    padding: 16px;
+    min-height: inherit;
+  }
+  &__backTitle {
+    font-size: 128px;
+    color: white;
+    line-height: 144px;
+    @include mobile-only {
+      font-size: 40px;
+      line-height: 80px;
+    }
+  }
+  &__subTitle {
+    @include titleFont();
+    margin: 10px;
+  }
+  &__title {
+    @include headerFont();
+    margin: 10px;
+  }
+  &__picture {
+    width: 70%;
+  }
+  &__list {
+    margin-top: auto;
+    margin-bottom: auto;
+    &--sm {
+      width: 40%;
+      padding: 64px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 80px;
+      @include mobile-only {
+        margin-left: 0;
+      }
+    }
+
+    @include mobile-only {
+      width: 100%;
+      padding: 16px;
+    }
+    > p {
+      font-weight: 800;
+    }
+  }
+}

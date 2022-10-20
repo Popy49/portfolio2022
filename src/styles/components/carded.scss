@@ -1,0 +1,21 @@
+.carded {
+  background-color: white;
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  &:hover {
+    box-shadow: 6px 6px 24px 6px rgb(0 0 0 / 12%);
+  }
+}
+
+.cards {
+  &__item {
+    padding: 28px;
+    margin: 28px;
+    @include mobile-only {
+      margin: 16px 0;
+      width: inherit !important;
+      padding: 16px !important;
+    }
+  }
+}

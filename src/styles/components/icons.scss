@@ -1,0 +1,7 @@
+.icons {
+  font-size: 48px;
+  color: #64748b;
+  @include mobile-only {
+    font-size: 32px;
+  }
+}
