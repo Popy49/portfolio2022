@@ -37,6 +37,9 @@
   }
   &__section {
     margin-top: 200px;
+    @include mobile-only {
+      margin-top: 100px;
+    }
   }
   &__list {
     margin-top: auto;

@@ -120,7 +120,7 @@ function Home({ idPicture }) {
               viewBox="0 0 841.9 595.3"
             >
               <g fill="#ffffff">
-                <circle cx="420.9" cy="296.5" r="230" fillOpacity="50%" />
+                <circle cx="420.9" cy="296.5" r="200" fillOpacity="50%" />
               </g>
             </svg>
           </div>
