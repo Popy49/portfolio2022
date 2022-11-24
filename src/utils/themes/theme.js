@@ -10,12 +10,18 @@ export const theme = createTheme({
       darker: "#053e85",
     },
     neutral: {
-      main: "#64748B",
+      main: "#c7296f",
       contrastText: "#fff",
     },
     neutralLight: {
-      main: "#8f9db1",
+      main: "#da4185",
       contrastText: "#fff",
     },
   },
 })
+
+// theme.typography.h2 = {
+//   "@media (max-width:600px)": {
+//     fontSize: "3rem",
+//   },
+// }

@@ -1,0 +1,16 @@
+.errorPage {
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: 2;
+  padding: 180px 32px 32px 32px;
+  padding-bottom: 32px;
+  padding-top: 180px;
+  height: 92vh;
+  background-color: black;
+  > a {
+    color: white;
+    &:hover {
+      color: rgb(204, 204, 204);
+    }
+  }
+}

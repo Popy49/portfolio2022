@@ -1,10 +1,18 @@
 import { Link, NavLink } from "react-router-dom"
 import logo from "../assets/flower2.svg"
+// import { Link, animateScroll as scroll } from "react-scroll"
+
+const checkActive = (match, location) => {
+  if (!location) return false
+  const { pathname } = location
+  console.log(pathname)
+  return pathname === "/"
+}
 
 function Navigation() {
   return (
     <div className="header flex-center">
-      <NavLink to="/" activeclassname="active">
+      <NavLink end to="/" activeclassname="active" isactive={checkActive}>
         Home
       </NavLink>
       <NavLink to="/projects" activeclassname="active">
@@ -19,12 +27,26 @@ function Navigation() {
           alt="Logo"
         />
       </Link>
-      <NavLink to="/about" activeclassname="active">
+      <Link
+        to="#about"
+        // activeClass="active"
+        // spy={true}
+        // smooth={true}
+        // offset={-70}
+        // duration={200}
+      >
         About
-      </NavLink>
-      <NavLink to="/contact" activeclassname="active">
+      </Link>
+      <Link
+        to="#contact"
+        // activeClass="active"
+        // spy={true}
+        // smooth={true}
+        // offset={-70}
+        // duration={200}
+      >
         Contact
-      </NavLink>
+      </Link>
     </div>
   )
 }

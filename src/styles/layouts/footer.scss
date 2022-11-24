@@ -1,8 +1,9 @@
 .footer {
-  margin-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(33, 37, 41);
   &__logo {
     margin: 0 16px;
     width: 40px;
+    color: white;
   }
 }

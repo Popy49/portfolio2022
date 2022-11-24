@@ -9,6 +9,9 @@
 }
 
 .cards {
+  &__title {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif !important;
+  }
   &__item {
     padding: 28px;
     margin: 28px;

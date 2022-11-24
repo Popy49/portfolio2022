@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://jponia-portfolio.go.yj.fr/",
+  "homepage": "https://jponia-portfolio.go.yj.fr/",
   "dependencies": {
     "@acto/react-navbar": "^2.3.2",
     "@emotion/react": "^11.10.4",
@@ -23,6 +23,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.8",
+    "react-scroll-parallax": "^3.3.2",
     "sass": "^1.55.0",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.3",

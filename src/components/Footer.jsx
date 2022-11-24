@@ -1,6 +1,7 @@
 import github from "../assets/icons/github.svg"
 import linkedin from "../assets/icons/linkedin.svg"
 import malt from "../assets/icons/malt.svg"
+import Navbar from "@acto/react-navbar"
 
 function Footer() {
   return (

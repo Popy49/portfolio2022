@@ -49,7 +49,7 @@ export const projects = [
   {
     name: "Booki",
     id: "P2_OCR_Booki_022022",
-    urlDemo: " https://github.com/Popy49/P2_OCR_Booki_022022",
+    urlDemo: " https://popy49.github.io/P2_OCR_Booki_022022",
     urlCode: "",
     urlPicture: "mock5.webp",
     progress: "",
@@ -58,7 +58,7 @@ export const projects = [
   {
     name: "Photographers gallery",
     id: "Front-End-Fisheye",
-    urlDemo: " https://github.com/Popy49/Front-End-Fisheye",
+    urlDemo: " https://popy49.github.io/Front-End-Fisheye",
     urlCode: "",
     urlPicture: "mock6.webp",
     progress: "",

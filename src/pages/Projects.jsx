@@ -36,7 +36,7 @@ function Projects() {
   // )
 
   return (
-    <main className="Projects">
+    <main className="home">
       <Container fluid className="gridList">
         {projects.map((project, index) => {
           return (
@@ -48,9 +48,9 @@ function Projects() {
                 width={500}
                 height={400}
               />
-              <div>
+              <div className="flex-mid">
                 <div className="grid__subTitle">{project.name}</div>
-                <div className="flex margin-s">
+                <div className="margin-s">
                   <Button
                     sx={{
                       ":hover": {
@@ -80,13 +80,15 @@ function Projects() {
                     Code
                   </Button>
                 </div>
-                {project.icons.map((icon, index) => {
-                  return (
-                    <IconButton aria-label="technologie" key={index}>
-                      <FontAwesomeIcon className="icons" icon={icon} />
-                    </IconButton>
-                  )
-                })}
+                <div>
+                  {project.icons.map((icon, index) => {
+                    return (
+                      <IconButton aria-label="technologie" key={index}>
+                        <FontAwesomeIcon className="icons" icon={icon} />
+                      </IconButton>
+                    )
+                  })}
+                </div>
                 {/* <ProgressBar>
                     {Object.keys(project.progress).map((key, i) => (
                       <ProgressBar

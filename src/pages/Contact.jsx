@@ -4,19 +4,11 @@ import { Card } from "@mui/material"
 import Divider from "@mui/material/Divider"
 import { CardContent } from "semantic-ui-react"
 
-function Contact({ idPicture }) {
+function Contact() {
   return (
-    <main className="home">
+    <section className="home__section" id="contact">
+      <h1 className="home__partTitle">Contact me</h1>
       <div className="flex">
-        <div className="center">
-          <img
-            width={400}
-            height={482}
-            src={idPicture}
-            className="home__picture"
-            alt="J ponia illustration"
-          />
-        </div>
         <ContactForm />
         <Card className="cards__item home__list--sm">
           <CardContent>
@@ -38,7 +30,7 @@ function Contact({ idPicture }) {
           </ul>
         </div> */}
       </div>
-    </main>
+    </section>
   )
 }
 
