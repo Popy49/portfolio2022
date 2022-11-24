@@ -98,9 +98,9 @@ function Home({ idPicture }) {
         <Parallax speed={-30}>
           <div onClick={() => handleClick()} className="slow" />
         </Parallax>
-        <Parallax speed={30}>
+        <Parallax onClick={() => handleClickGlitch()} speed={30}>
           <div className="fast" />
-          <div className="svgWrap" onClick={() => handleClickGlitch()}>
+          <div className="svgWrap">
             <svg className="svgWrap__text">
               <use xlinkHref="#svgGlitch"></use>
             </svg>
@@ -112,7 +112,7 @@ function Home({ idPicture }) {
             </svg>
           </div>
 
-          <div className="hide" onClick={() => handleClickGlitch()}>
+          <div className="hide">
             <svg
               id="svgGlitch"
               className="none"
@@ -126,30 +126,6 @@ function Home({ idPicture }) {
           </div>
         </Parallax>
         <Contact />
-      </div>
-      <div className="svgWrap">
-        <svg className="svgWrap__text">
-          <use xlinkHref="#svgGlitch"></use>
-        </svg>
-        <svg className="svgWrap__text">
-          <use xlinkHref="#svgGlitch"></use>
-        </svg>
-        <svg className="svgWrap__text">
-          <use xlinkHref="#svgGlitch"></use>
-        </svg>
-      </div>
-
-      <div className="hide">
-        <svg
-          id="svgGlitch"
-          className="none"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 841.9 595.3"
-        >
-          <g fill="#ffffff">
-            <circle cx="420.9" cy="296.5" r="200" />
-          </g>
-        </svg>
       </div>
 
       <div id="abyss" className="abyss displaynone"></div>
