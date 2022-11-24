@@ -16,11 +16,12 @@
 
 .center {
   text-align: center;
-  width: 70%;
+  // width: 70%;
   height: auto;
   margin: auto;
   @include mobile-only {
-    width: 50%;
+    margin-top: 32px;
+    // width: 50%;
   }
 }
 

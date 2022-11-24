@@ -50,7 +50,7 @@ function Projects() {
               />
               <div className="flex-mid">
                 <div className="grid__subTitle">{project.name}</div>
-                <div className="margin-s">
+                <div className="margin-s align">
                   <Button
                     sx={{
                       ":hover": {

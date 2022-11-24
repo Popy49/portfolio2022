@@ -128,7 +128,7 @@ function Home({ idPicture }) {
         <Contact />
       </div>
 
-      <div id="abyss" className="abyss displaynone"></div>
+      <div id="abyss" className="abyss displaynone "></div>
     </main>
   )
 }

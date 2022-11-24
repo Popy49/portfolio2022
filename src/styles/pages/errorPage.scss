@@ -5,10 +5,15 @@
   padding: 180px 32px 32px 32px;
   padding-bottom: 32px;
   padding-top: 180px;
-  height: 92vh;
+  min-height: 92vh;
   background-color: black;
-  > a {
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+  > div > a {
     color: white;
+    margin: 16px;
     &:hover {
       color: rgb(204, 204, 204);
     }
