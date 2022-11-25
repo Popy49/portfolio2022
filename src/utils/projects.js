@@ -7,7 +7,11 @@ import {
   faPhp,
   faSass,
 } from "@fortawesome/free-brands-svg-icons"
-import { faIndustry, faVial } from "@fortawesome/free-solid-svg-icons"
+import {
+  faIndustry,
+  faVial,
+  faChartBar,
+} from "@fortawesome/free-solid-svg-icons"
 
 export const projects = [
   {
@@ -81,5 +85,14 @@ export const projects = [
     urlPicture: "mock8.webp",
     progress: "",
     icons: [faHtml5, faCss3Alt, faJs, faPhp],
+  },
+  {
+    name: "Dashboard sport application",
+    id: "p12SportSee",
+    urlDemo: "https://p12-sport-see.vercel.app/user/12",
+    urlCode: "",
+    urlPicture: "mock9.webp",
+    progress: "",
+    icons: [faHtml5, faCss3Alt, faReact, faChartBar],
   },
 ]

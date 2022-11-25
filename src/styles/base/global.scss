@@ -75,6 +75,9 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+  @include mobile-only {
+    max-width: 80%;
+  }
 }
 
 .max-width {

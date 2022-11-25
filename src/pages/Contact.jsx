@@ -16,9 +16,11 @@ function Contact() {
               Based in
             </Typography>
             <Divider variant="middle" />
-            <li>Annecy</li>
-            <li>Lyon</li>
-            <li>Lausanne</li>
+            <ul>
+              <li>Annecy</li>
+              <li>Lyon</li>
+              <li>Lausanne</li>
+            </ul>
           </CardContent>
         </Card>
         {/* <div className="home__list">
